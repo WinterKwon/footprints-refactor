@@ -36,6 +36,6 @@ export class User extends BaseEntity {
   @Column({ type: 'enum', enum: UserStatus, default: UserStatus.NORMAL })
   userStatus: UserStatus;
 
-  @Column({ nullable: true })
+  @Column({ default: ' ' })
   tribe: string;
 }
